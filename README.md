@@ -62,6 +62,7 @@
     ```bash
     make all
     make clean
+    make format
     make goal_lab1 
     make goal_lab1_2 
     make goal_lab1_3 
