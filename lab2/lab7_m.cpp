@@ -1,17 +1,21 @@
-﻿/* Написать приложение, которое будет определять при каком минимальном 
-значении Х из отрезка от А до В значение функции минимально
-*/
+﻿//------------------------------------------------//
+//                       L2                       //
+//         Write an application that will         //
+//      determine at what minimum value of X      //
+//          from the segment from A to B,         //
+//      the value of the function is minimal      //
+//------------------------------------------------//
+
+#include <math.h>
 
 #include <iostream>
-#include<math.h>
 using namespace std;
 
 float fun(float a, float x, float z);
 void ab(float& A, float& B);
 void p(float f, float x, float& minf, float& X);
 
-int main()
-{
+int main() {
     setlocale(LC_ALL, "Russian");
 
     float A, B, h;
@@ -31,8 +35,7 @@ int main()
     cout << "Введите шаг, он должен быть меньше или равен " << h << endl;
     cin >> h;
 
-    if ((h <= (abs((A - B) / 2))) and (h != 0))
-    {
+    if ((h <= (abs((A - B) / 2))) and (h != 0)) {
         cout << "Введите значение переменной а:" << endl;
         cin >> a;
 
@@ -41,25 +44,18 @@ int main()
 
         x = A;
 
-        do
-        {
+        do {
             f = fun(a, x, z);
             p(f, x, minf, X);
 
             x = x + h;
         } while (x < B);
 
-        cout << "Ответ: минимальное значение x равно " << X << " при минимальном значении функции, равном " << minf << endl;
-    }
-    else
-    {
+        cout << "Ответ: минимальное значение x равно " << X << " при минимальном значении функции, равном "
+             << minf << endl;
+    } else {
         h = abs((A - B) / 2);
-        cout << "Значение шага должно быть меньше или равно " << h << " и не быть равным 0, пожалуйста, запустите код заново  " << endl;
+        cout << "Значение шага должно быть меньше или равно " << h
+             << " и не быть равным 0, пожалуйста, запустите код заново  " << endl;
     }
-
 }
-
-
-
-
-

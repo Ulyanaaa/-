@@ -1,6 +1,0 @@
-﻿  lab4.cpp
-C:\Users\User\Desktop\C++\lab4\lab4.cpp(12,14): error C2065: e: необъявленный идентификатор
-C:\Users\User\Desktop\C++\lab4\lab4.cpp(13,171): error C2065: e: необъявленный идентификатор
-C:\Users\User\Desktop\C++\lab4\lab4.cpp(18,14): error C2065: e: необъявленный идентификатор
-C:\Users\User\Desktop\C++\lab4\lab4.cpp(19,68): error C2065: e: необъявленный идентификатор
-C:\Users\User\Desktop\C++\lab4\lab4.cpp(24,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных

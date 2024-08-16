@@ -1,28 +1,30 @@
-﻿/*Задача 1.20
-Составить программу нахождения кинетической  энергии тела,
-массой m,  движущегося со скоростью  V.
+﻿//------------------------------------------------//
+//                    Task 1.20                   //
+//   Draw up a program for finding the kinetic    //
+//  energy of a body, mass m, moving with speed V //
+//            Using a calculation function        //
+//           located in another project file      //
+//------------------------------------------------//
 
-С использованием вычисляющей функции, расположенной в другой файле проекта
-*/
-
+#include <math.h>
 
 #include <iostream>
-#include <math.h>
 using namespace std;
 
 float count(float m, float v);
 
-int main()
-{
-	setlocale(LC_ALL, "Russian");
-	float m = 1;
-	float v = 1;
-	float e = count(m, v);
-	cout << endl << "При массе равной " << m << " и при скорости равной " << v << " кинетическая энергия равна: " << e << endl;
-	cout << "Введите значение массы:";
-	cin >> m;
-	cout << "Введите значение объема:";
-	cin >> v;
-	e = count(m, v);
-	cout << "Кинетическая энергия равна: " << e;
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float m = 1;
+    float v = 1;
+    float e = count(m, v);
+    cout << endl
+         << "При массе равной " << m << " и при скорости равной " << v << " кинетическая энергия равна: " << e
+         << endl;
+    cout << "Введите значение массы:";
+    cin >> m;
+    cout << "Введите значение объема:";
+    cin >> v;
+    e = count(m, v);
+    cout << "Кинетическая энергия равна: " << e;
 }
